@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://rcoy8osph5fg"]
+
+[ext_resource type="Texture2D" uid="uid://curhshdneysh1" path="res://assets/shotgun.png" id="1_ewbep"]
+[ext_resource type="Script" path="res://scripts/gun.gd" id="1_x5oct"]
+
+[node name="pivot" type="Node2D"]
+script = ExtResource("1_x5oct")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_ewbep")
