@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://b3vhuercwtvl8"]
+[gd_scene load_steps=5 format=3 uid="uid://b3vhuercwtvl8"]
 
 [ext_resource type="Texture2D" uid="uid://be5b31ad55jab" path="res://assets/square.png" id="1_dbggf"]
 [ext_resource type="PackedScene" uid="uid://bvkk2ptiysxgm" path="res://scenes/player.tscn" id="2_gnocr"]
+[ext_resource type="PackedScene" uid="uid://rcoy8osph5fg" path="res://scenes/gun.tscn" id="3_oubyx"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_notqc"]
 size = Vector2(1149, 45)
@@ -23,3 +24,5 @@ texture = ExtResource("1_dbggf")
 [node name="Player" parent="." instance=ExtResource("2_gnocr")]
 unique_name_in_owner = true
 position = Vector2(556, 404)
+
+[node name="pivot" parent="." instance=ExtResource("3_oubyx")]
